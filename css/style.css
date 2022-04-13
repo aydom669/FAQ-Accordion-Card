@@ -14,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+   
 }
 
 html{
@@ -36,7 +37,6 @@ body{
 }
 
 .cubo{
-  position: relative;
   width: 180px;
   height: 180px;
   transform: translate(-280% , 130%);
@@ -48,7 +48,6 @@ body{
     position: relative;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
   
 }
@@ -59,29 +58,31 @@ body{
     width: 400px;
     background-repeat: no-repeat;
     background-position: 150% center;
+    position: relative;
     
   }
 
 .main{
     background-color: #fff;
     border-radius: 30px;
-    height: 509px;
+    height: 450px;
     max-width: 930px;
     display: flex;
     background-image: url("images/bg-pattern-desktop.svg");
     background-repeat: no-repeat;
     background-position: 1700% 65%;
     z-index: 10;
+    
   
 }
 
 .acordeon{
-  margin: 70px 0px;
+  margin: 70px 20px;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
   position: relative;
-  right: 8%;
+  right: 7%;
 }
 
 .question{
@@ -146,6 +147,10 @@ body{
     max-width: 890px;
   }
 
+  .acordeon{
+    margin: 50px 0px;
+  }
+
   .cubo{
     transform: translate(-270% , 130%);
   }
@@ -155,19 +160,23 @@ body{
 @media (max-width: 943px) {
 
   body{
-    height: 120vh;
+    height: 135vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
   
   }
     .main{
        
-        max-width: 35rem;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 600px;
+      max-width: 35rem;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 650px;
+      text-align: center;
+      margin-top: 10%;
+      
         
     }
 
@@ -187,11 +196,11 @@ body{
     .main__image--Ad{
       background: url(images/illustration-woman-online-mobile.svg);
       background-repeat: no-repeat;
-      background-position: center;
-      width: 200px;
-      height: 200px;
-      top: 60%;
-      position: absolute;
+      width: 270px;
+      height: 273px;
+      top: 80%;
+      right: 12%;
+      position: relative;
         
     }
 
@@ -217,21 +226,28 @@ body{
 
 @media (max-width: 423px) {
   body{
-    height: 120vh;
+    height: 140vh;
     
   }
   .main__image--Ad{
-    top: 70%;
+    top: 80%;
   }
 
   .main{
-    width: 350px;
+    width: 30rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+    margin-top: 0;
+
   }
 
   .acordeon{
     width: 200px;
     padding: 0;
-    right: 55px;
+    position: relative;
+    text-align: start;
   }
 
   .question{
